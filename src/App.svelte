@@ -6,7 +6,6 @@ const titlesLanguages={
 	EN:{
 			name: "Hi, My name is",
 			phone: "My phone number is",
-			address: "My address is",
 			email: "My email address is",
 			birthday: "My birthday is",
 			password: "My password is",
@@ -14,7 +13,6 @@ const titlesLanguages={
 	PT: {
 				name: "Oi, meu nome é",
 				phone: "Meu número de telefone é",
-				address: "Meu endereço é",
 				email: "Meu correio eletrônico é",
 				birthday: "Meu aniversário é",
 				password: "Minha senha é",
@@ -22,7 +20,6 @@ const titlesLanguages={
 	ES: {
 				name: "Hola, Mi nombre es",
 				phone: "Mi número de teléfono es",
-				address: "Mi direccion es",
 				email: "Mi correo electronico es",
 				birthday: "Mi cumpleaños es",
 				password: "Mi contraseña es",	
@@ -30,7 +27,6 @@ const titlesLanguages={
 	KO: {
 				name: "안녕 내 이름은",
 				phone: "내 전화 번호는",
-				address: "내 주소는",
 				email: "내 이메일은",
 				birthday: "내 생일은",
 				password: "내 비밀번호는",	
@@ -38,7 +34,6 @@ const titlesLanguages={
 	HU: {
 				name: "Helló az én nevem",
 				phone: "A telefonszámom",
-				address: "A címem",
 				email: "Az email-em",
 				birthday: "Az én születésnapom",
 				password: "A jelszavam",	
@@ -108,7 +103,6 @@ const titlesLanguages={
 				<img src="user.png" alt="an"  on:mousemove={() => showInfo( "name",`${$user?.name.title} ${$user?.name.first}${$user?.name.last}`)}>
 				<img src="email.png" alt="an"   on:mousemove={() => showInfo( "email",`${$user?.email}`) }>
 			 	<img src="calendar.png" alt="an"   on:mousemove={() => showInfo( "birthday" , $user?.dob.date) }>
-			    <img src="map.png" alt="an"   on:mousemove={() => showInfo( "address" , $user?.dob.date) }>
 				<img src="phone.png" alt="an"   on:mousemove={() => showInfo ("phone", $user?.phone)}>
 				<img src="lock.png" alt="an"   on:mousemove={() => showInfo ( "password", $user?.login.password)}> 
 			</div>	
